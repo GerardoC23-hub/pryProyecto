@@ -25,24 +25,24 @@ namespace pryProyecto
                 using (var conexion = conexionBD.AbrirConexion())
                 {
                     string sql = "SELECT perfil FROM tblUsuarios "
-                        + "WHERE nombreUsuario =@usuario ADN passaword= @passwpord ;";
+                        + "WHERE nombreUsuario = @usuario AND password = @password";
 
                     using (var consulta = new MySqlCommand(sql, conexion))
                     {
                         consulta.Parameters.AddWithValue("@usuario", usuario);
-                        consulta.Parameters.AddWithValue("@passaword", password);
+                        consulta.Parameters.AddWithValue("@password", password);
 
                         using (var resultado = consulta.ExecuteReader())
                         {
                             if (resultado.Read())
                             {
                                 perfil = resultado.GetString("perfil");
-                                MessageBox.Show("Tu perfil es: " + perfil, "Sistema");
+                                MessageBox.Show("Tu perfil es: " + perfil + "Sistema");
                                 return true;
                             }
                             else
                             {
-                                throw new Exception("Usuario o contraseña incorrectos. ");
+                                throw new Exception("Usuario o contraseña incorrectos ");
                             }
                         }
                     }
