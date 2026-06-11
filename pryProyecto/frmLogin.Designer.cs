@@ -39,36 +39,40 @@
             // 
             // txtUsuario
             // 
-            txtUsuario.Location = new Point(350, 123);
+            txtUsuario.Location = new Point(306, 58);
+            txtUsuario.Margin = new Padding(3, 2, 3, 2);
             txtUsuario.Name = "txtUsuario";
             txtUsuario.PlaceholderText = "Ingrese el Usuario";
-            txtUsuario.Size = new Size(279, 27);
+            txtUsuario.Size = new Size(245, 23);
             txtUsuario.TabIndex = 0;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(350, 197);
+            txtPassword.Location = new Point(306, 114);
+            txtPassword.Margin = new Padding(3, 2, 3, 2);
             txtPassword.Name = "txtPassword";
             txtPassword.PlaceholderText = "Ingrese la Contraseña";
-            txtPassword.Size = new Size(279, 27);
+            txtPassword.Size = new Size(245, 23);
             txtPassword.TabIndex = 1;
             txtPassword.UseSystemPasswordChar = true;
             // 
             // pcbImagenLogin
             // 
             pcbImagenLogin.Image = (Image)resources.GetObject("pcbImagenLogin.Image");
-            pcbImagenLogin.Location = new Point(14, 84);
+            pcbImagenLogin.Location = new Point(12, 42);
+            pcbImagenLogin.Margin = new Padding(3, 2, 3, 2);
             pcbImagenLogin.Name = "pcbImagenLogin";
-            pcbImagenLogin.Size = new Size(266, 236);
+            pcbImagenLogin.Size = new Size(272, 177);
             pcbImagenLogin.SizeMode = PictureBoxSizeMode.StretchImage;
             pcbImagenLogin.TabIndex = 2;
             pcbImagenLogin.TabStop = false;
             // 
             // btnAcceder
             // 
-            btnAcceder.Location = new Point(350, 277);
+            btnAcceder.Location = new Point(306, 187);
+            btnAcceder.Margin = new Padding(3, 2, 3, 2);
             btnAcceder.Name = "btnAcceder";
-            btnAcceder.Size = new Size(102, 43);
+            btnAcceder.Size = new Size(89, 32);
             btnAcceder.TabIndex = 3;
             btnAcceder.Text = "Acceder";
             btnAcceder.UseVisualStyleBackColor = true;
@@ -76,9 +80,10 @@
             // 
             // btnSalir
             // 
-            btnSalir.Location = new Point(518, 277);
+            btnSalir.Location = new Point(453, 187);
+            btnSalir.Margin = new Padding(3, 2, 3, 2);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(102, 43);
+            btnSalir.Size = new Size(89, 32);
             btnSalir.TabIndex = 4;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
@@ -86,14 +91,15 @@
             // 
             // frmLogin
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 451);
+            ClientSize = new Size(700, 251);
             Controls.Add(btnSalir);
             Controls.Add(btnAcceder);
             Controls.Add(pcbImagenLogin);
             Controls.Add(txtPassword);
             Controls.Add(txtUsuario);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "frmLogin";
             Text = "Login";
             ((System.ComponentModel.ISupportInitialize)pcbImagenLogin).EndInit();
